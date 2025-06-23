@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styleport.css" />
+    <title>WebShow Port</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">folio<b>.</b></div>
+        <ul class="navItems">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">project</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+        <div class="links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="cols cols0">
+          <span class="topline">Hello</span>
+          <h1>I'm <span class="multiText"></span></h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            molestias ipsa omnis nostrum dolore cupiditate in deserun
+          </p>
+          <div class="btns">
+            <button>download Port</button>
+            <button>hire me</button>
+          </div>
+        </div>
+
+        <div class="cols cols1">
+          <div class="imgbox">
+            <img src="19022-removebg-preview.png" id="splash" />
+            <img src="img1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+      var typingEffect = new Typed(".multiText", {
+        strings: ["coder", "youtuber", "student", "learn Ai"],
+        loop: 100,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WedShow Port</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Web Dev PortFolio</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music player.html">Music-player</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+                <li><a href="music player.html">Music-player</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="loader"></div>
+    </div>
+
+
+    <main>
+        <section id="music">
+            <div class="music-container">
+                <div class="music-info"><h4 id="title"></h4>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <audio src="music/Starboy.mp3" id="audio"></audio>
+    
+                <div class="img-container">
+                    <img src="images/The_Weeknd_-_Starboy.png" alt="music-cover" id="cover" />
+                </div>
+    
+                <div class="navigation">
+                    <botton id="prev" class="action-btn1">
+                        <i class="fas fa-backward"></i>
+                    </botton>
+                    <botton id="play" class="action-btn1 action-btn1-big">
+                        <i class="fas fa-play"></i>
+                    </botton>
+                    <botton id="next" class="action-btn1">
+                        <i class="fas fa-forward"></i>
+                    </botton>
+                    <!-- <button id="loop" class="action-btn1">
+                        <i class="fas fa-repeat"></i>
+                    </button> -->
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList =isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <script src="loader.js"></script>
+    <script src="script-music.js"></script>
+
+</body>
+</html>
